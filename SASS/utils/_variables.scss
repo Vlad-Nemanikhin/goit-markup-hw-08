@@ -1,0 +1,63 @@
+:root {
+  --common-width: 100%;
+  --section-padding: 94px;
+  --inner-section-margin: 50px;
+  --card-margin: 30px;
+  
+  --body-background: #ffffff;
+  --header-background: #ffffff;
+  --header-border: #ECECEC;
+  --footer-background: #2f303a;
+  --p-color: #757575;
+  --h-color: #212121;
+  --hover-color: #2196f3;
+  --common-color: #ffffff;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background: var(--body-background);
+}
+
+::after, ::before, * {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {text-decoration: none;}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+ul > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

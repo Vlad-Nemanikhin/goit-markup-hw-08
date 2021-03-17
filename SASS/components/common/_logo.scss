@@ -1,0 +1,18 @@
+.logotype {
+
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+
+  &--headering {
+  color: black;
+}
+
+  &--footering {
+  color: var(--common-color);
+}
+}

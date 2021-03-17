@@ -1,0 +1,63 @@
+.team {
+	width: var(--common-width);
+	padding-top: var(--section-padding);
+	padding-bottom: var(--section-padding);
+	&__title {
+		color: var(--h-color);
+		font-style: normal;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 42px;
+		text-align: center;
+		letter-spacing: 0.03em;
+}
+}
+
+.team--painted {
+  background: #f5f4fa;
+}
+
+.team__title--indent {
+  margin-bottom: var(--inner-section-margin);
+}
+
+.card-set {
+	display: flex;
+	&__item {
+		flex-basis: calc(100% / 4 - 30px);
+		background: var(--common-color);
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2);
+		border-radius: 0px 0px 4px 4px;
+	&:not(:last-child){
+		margin-right: var(--card-margin);
+}
+}
+	&__decr {
+	color: var(--p-color);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+	text-align: center;
+}
+	&__name {
+	color: var(--h-color);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	letter-spacing: 0.03em;
+}
+}
+.item-wrapper {
+	padding: 30px 32px;
+}
+.card-set__decr--indent {
+	margin-bottom: 16px;
+}
+.card-set__name--indent {
+	margin-bottom: 10px;
+}
