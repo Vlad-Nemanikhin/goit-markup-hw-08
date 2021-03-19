@@ -2,13 +2,16 @@
 	padding-bottom: var(--section-padding);
 	&__title {
 
-  color: var(--h-color);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
+   color: var(--h-color);
+   font-style: normal;
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   letter-spacing: 0.03em;
+	}
+	@media screen and (max-width: 767px) {
+   display: none;
 	}
 }
 

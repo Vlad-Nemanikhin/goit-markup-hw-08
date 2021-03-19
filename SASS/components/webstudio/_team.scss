@@ -23,6 +23,9 @@
 
 .card-set {
 	display: flex;
+	@media screen and (max-width: 767px) {
+   display: flex;
+	flex-direction: column;}
 	&__item {
 		flex-basis: calc(100% / 4 - 30px);
 		background: var(--common-color);
