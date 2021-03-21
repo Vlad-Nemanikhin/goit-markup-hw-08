@@ -1,39 +1,51 @@
 .page-header {
-  width: var(--common-width);
+  width: 480px;
+  margin: 0 auto;
   background: var(--header-background);
   border-bottom: 1px solid var(--header-border);
   position: relative;
-  &__nav {
-  min-width: 100%;
   @media screen and (min-width: 768px){
-  display: flex;
-  align-items: center;
+    width: 768px;
+    margin: 0 auto;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 1200px){
+    width: 1200px;
+    margin: 0 auto;
+  }
+  &__nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 15px 0;
+    min-width: 100%;
+    @media screen and (max-width: 767px){
+    justify-content: space-between;
     }
+  @media screen and (min-width: 768px){
+    padding: 0px;
+  }
   }
 }
 
 .page-header__menu-wrapper {
-@media screen and (min-width: 768px){
-display: flex;
-justify-content: space-between;
-  flex-basis: 100%;
-  padding-left: var(--section-padding);
-}
-@media screen and (max-width: 767px) {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   padding: 0px 40px 48px 40px;
-  min-width: 100%;
   background: #ffffff;
+@media screen and (min-width: 768px){
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  margin-left: 88px;
+  padding: 0px 0px 0px 0px;
 }
+
+@media screen and (min-width: 768px){
+  margin-left: 93px;
+}
+
 &.is-open {
   @media screen and (max-width: 767px) {
   display: block;
@@ -54,18 +66,19 @@ justify-content: space-between;
 }
 
 .menu__btn .icon-cross {
-  display: none;
+  display: block;
   fill: currentColor;
 }
 
 .menu__btn .icon-menu {
+  display: none;
   fill: currentColor;
 }
 
 .menu__btn.is-open .icon-cross {
-  display: block;
+  display: none;
 }
 
 .menu__btn.is-open .icon-menu {
-  display: none;
+  display: block;
 }

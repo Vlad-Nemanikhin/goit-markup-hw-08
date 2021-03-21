@@ -1,5 +1,6 @@
 .hero {
-  min-height: 600px;
+  min-height: 400px;
+  width: 480px;
   background-image: linear-gradient(to right,
   rgba(47, 48, 58, 0.4),
   rgba(47, 48, 58, 0.4)
@@ -25,7 +26,7 @@
   rgba(47, 48, 58, 0.4),
   rgba(47, 48, 58, 0.4)
   ), url("/images/t/Header-img768-2x.jpg");
-  }
+    }
   }
 
   @media screen and (min-width: 1200px){
@@ -40,42 +41,52 @@
   rgba(47, 48, 58, 0.4),
   rgba(47, 48, 58, 0.4)
   ), url("/images/d/hero-2x.jpg");
-  }
+    }
   }
   background-color: rgba(196, 196, 196, 1);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 200px 0;
-  @media screen and (max-width: 767px){
   padding: 118px 0px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px){
+  min-width: 768px;
+  padding: 118px 0px;
+  margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px){
+  max-width: 1600px;
+  min-width: 1200px;
+  padding: 200px 0px;
+  margin: 0 auto;
+  min-height: 600px;
   }
   &__title {
   display: block;
-  max-width: 696px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
-
   color: var(--common-color);
+  font-family: inherit;
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   text-align: center;
+
+  font-size: 26px;
+  line-height: 42px;
   letter-spacing: 0.06em;
   
-  text-transform: uppercase;
-
-  @media screen and (max-width: 767px){
-    max-width: 360px;
-    font-size: 26px;
-    line-height: 42px;    
+  @media screen and (min-width: 1200px){
+  max-width: 696px;
+  font-size: 44px;
+  line-height: 60px;
   }
 }
 &__btn {
   display: block;
   margin-top: 30px;
-  min-width: 200px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 32px;
