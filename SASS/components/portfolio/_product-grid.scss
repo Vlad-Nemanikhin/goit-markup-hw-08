@@ -1,15 +1,44 @@
 .product-grid {
+	@media screen and (max-width: 767px){
+	display: block;
+	margin: 0 auto;
+	}
+
+	@media screen and (min-width: 768px){
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -30px;
+	margin-left: -30px;
+	}
+
+	@media screen and (min-width: 1200px){
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: calc(-1 * var(--card-margin));
 	margin-left: calc(-1 * var(--card-margin));
+	}
 	&__item {
-	flex-basis: calc(100% / 3 - 30px);
-	margin-left: var(--card-margin);
-	margin-top: var(--card-margin);	
-	background-color: var(--common-color);
-	border: 1px solid #EEEEEE;	
-	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), cursor 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		background-color: var(--common-color);
+		border: 1px solid #EEEEEE;
+		transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), cursor 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		
+		@media screen and (max-width: 767px){
+		width: 100%;
+		margin-bottom: 30px;
+		}
+
+		@media screen and (min-width: 768px){
+		flex-basis: calc((100% - 60px) / 2);
+		margin-top: 30px;
+		margin-left: 30px;
+		}
+
+		@media screen and (min-width: 1200px){
+		flex-basis: calc(100% / 3 - 30px);
+		margin-left: var(--card-margin);
+		margin-top: var(--card-margin);	
+		}
+		
 		&:hover, &:focus {
 		cursor: pointer;
 		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -40,7 +69,16 @@
 	&__item-thumb{
 	position: relative;
 	overflow: hidden;
+
+	@media screen and (max-width: 767px){
+	margin: 0 auto;
 	}
+	}
+}
+
+.product-img {
+	margin: 0 auto;
+	width: 100%;
 }
 
 .content-wrapper{
@@ -57,6 +95,13 @@
 	transform: translateY(100%);
 	background: rgba(33, 150, 243, 0.9);
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	@media screen and (max-width: 767px){
+	margin: 0 auto;
+	padding: 77px 24px;
+
+	}
+
 	&__content {
 	position: absolute;
 	top: 50%;
@@ -70,6 +115,10 @@
 	line-height: 28px;	
 	letter-spacing: 0.03em;	
 	color: #FFFFFF;	
+		@media screen and (max-width: 767px){
+		width: 402px;
+		height: 140px;	
+		}
 	}
 }
 
