@@ -1179,14 +1179,16 @@ ul > li {
 
 @media screen and (min-width: 768px) {
   .page-footer {
-    width: 768px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .page-footer {
-    width: 1200px;
+    max-width: 1600px;
+    width: 100%;
     margin: 0 auto;
   }
 }
