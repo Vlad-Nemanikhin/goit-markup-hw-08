@@ -114,6 +114,9 @@
 }
 .item-wrapper {
 	padding: 30px 122px 24px;
+	@media screen and (min-width: 768px) {
+	padding: 30px 74px 24px ;
+	}
 	@media screen and (min-width: 1200px) {
 	padding: 30px 32px;
 	}
