@@ -19,13 +19,20 @@
 	
 			<nav class="page-header__nav">
 				<a href="./index.html" class="logotype">Web<span class="logotype logotype--headering">Studio</span></a>
-				<button class="menu__btn is-open" type="button" aria-expanded="false" data-menu-button>
-					<svg class="menu__icon" width="24" height="16" aria-label="Переключатель мобильного меню">
-						<use class="icon-cross" href="./images/icons.svg#icon-close-header"></use>
-						<use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+				<button class="menu__btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+					<svg class="burger__icon" width="24" height="16">
+						<use class="icon-burger" href="./images/icons.svg#icon-menu"></use>
 					</svg>
 				</button>
-				<div class="page-header__menu-wrapper" data-menu>
+	
+	
+				<div class="page-header__menu-wrapper js-menu-container" id="mobile-menu">
+					<button class="menu__btn menu__btn--cross js-close-menu" type="button">
+						<svg class="cross__icon" width="24" height="16">
+							<use class="icon-cross" href="./images/icons.svg#icon-close-header"></use>
+						</svg>
+					</button>
+	
 					<ul class="header-nav">
 	
 						<li class="header-nav__item">
@@ -33,7 +40,7 @@
 						</li>
 	
 						<li class="header-nav__item header-nav__item--current">
-							<a class="header-nav__link" href="./portfolio.html" id="portfolio" target="_blank">Портфолио</a>
+							<a class="header-nav__link" href="./portfolio.html" id="portfolio">Портфолио</a>
 						</li>
 	
 						<li class="header-nav__item">
@@ -315,6 +322,9 @@
 			</div>
 		</div>
 	</footer>
-	<script src="./js/menu.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+		integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+		crossorigin="anonymous"></script>
+	<script defer src="js/menu.js"></script>
 </body>
 </html>
